@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useSpring,animated} from 'react-spring'
+import LeftBar from './component/leftSection/LeftBar';
 function App() {
+  //const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
+  //const [flip, set] = useState(false)
+  const styles = useSpring({
+    to: { rotateZ: 0},
+    from: { rotateZ: 360 },
+    delay: 0,
+    reverse:true,
+    config: { duration: 500 }
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <animated.div  style={{
+      ...styles,
+    }}>
+        <LeftBar />
+    </animated.div>
+   </div>
   );
 }
 

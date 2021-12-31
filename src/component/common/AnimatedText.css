@@ -1,0 +1,11 @@
+.animatedTextHeader{
+    text-align: center;
+    color: rgb(40, 180, 215);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.animatedText{
+    text-align: center;
+    color: rgb(40, 215, 159);
+    font-size: 13px;
+}
