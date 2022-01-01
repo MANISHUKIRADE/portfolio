@@ -9,6 +9,12 @@
   list-style: none;
 }
 
+.socialHeader{ 
+  color : #28B4D7;
+  font-size: 15px ;
+  font-weight: bold
+}
+
 
 .social {
   margin: 0 1rem;

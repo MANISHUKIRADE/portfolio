@@ -18,6 +18,8 @@ export default function Text(props) {
   
     return<>
      <animated.h3 class= "animatedTextHeader" style={springProps}>{displayText}</animated.h3>
+     <br/>
+     <br/>
     <animated.span class = "animatedText">
     <ReactTypingEffect
         cursorRenderer={
@@ -39,6 +41,7 @@ export default function Text(props) {
         text={"I love to solve challenges and problems that come my way by coming up with innovative technical solutions."}
        />
      </animated.span>
+     <br/>
      <animated.span class = "animatedText">
        <ReactTypingEffect 
        cursorRenderer={
@@ -50,7 +53,6 @@ export default function Text(props) {
        speed={100}
        />
      </animated.span>
-     <animated.h5 class = "animatedText"></animated.h5>
     </>
     
   }
