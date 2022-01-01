@@ -1,6 +1,7 @@
 import Profile  from "./Profile";
 import Name from "./Name";
 import Text from "../common/AnimatedText";
+import SocialFollow from "../common/SocialFollow";
 import './LeftBar.css';
 export default function LeftBar() {
     return (
@@ -9,6 +10,7 @@ export default function LeftBar() {
         <Profile />
         <Name />
         <Text displayText="FullStack Developer" />
+        <SocialFollow />
         </div>
         </>
     )
